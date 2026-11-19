@@ -1,0 +1,42 @@
+{
+  "name": "test app",
+  "version": "0.0.1",
+  "apps": [
+    {
+      "name": "app1",
+      "image": "node@26-slim",
+      "environments": [
+        {
+          "name": "DB_NAME",
+          "value": "test_db"
+        },
+        {
+          "name": "DB_USER",
+          "value": "test_user"
+        },
+        {
+          "name": "DB_PASS",
+          "value": "password"
+        }
+      ]
+    },
+    {
+      "name": "app2",
+      "image": "node@26-slim",
+      "environments": [
+        {
+          "name": "DB_NAME",
+          "value": "test_db"
+        },
+        {
+          "name": "DB_USER",
+          "value": "test_user"
+        },
+        {
+          "name": "DB_PASS",
+          "value": "password"
+        }
+      ]
+    }
+  ]
+}
