@@ -1,0 +1,21 @@
+{
+  "name": "test app",
+  "version": "0.0.1",
+  "apps": [
+    {
+      "name": "app",
+      "image": "node@26-slim",
+      "environments": []
+    },
+    {
+      "name": "foo",
+      "image": "node@26-slim",
+      "environments": [
+        {
+          "name": "FOO",
+          "value": "bar"
+        }
+      ]
+    }
+  ]
+}

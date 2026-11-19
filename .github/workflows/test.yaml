@@ -15,11 +15,16 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Check Node.js version
+        run: node -v
+
       - name: Test JSON manipulation
         run: |
-          cp ./.test/test.json ./test.json
-          node -v
+          node ./scripts/insert-env.ts --name app   > ./test.app.json
+          node ./scripts/insert-env.ts --name batch > ./test.batch.json
 
-      - name: Check JSON
-        run: |
-          cat test.json
+      - name: Check app JSON
+        run: cat test.app.json
+
+      - name: Check batch JSON
+        run: cat test.batch.json

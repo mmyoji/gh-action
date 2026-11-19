@@ -1,0 +1,21 @@
+{
+  "name": "test batch",
+  "version": "0.0.1",
+  "apps": [
+    {
+      "name": "batch",
+      "image": "node@26-slim",
+      "environments": []
+    },
+    {
+      "name": "bar",
+      "image": "node@26-slim",
+      "environments": [
+        {
+          "name": "BAR",
+          "value": "buz"
+        }
+      ]
+    }
+  ]
+}
